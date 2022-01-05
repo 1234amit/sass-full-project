@@ -1,0 +1,32 @@
+.feature-area{
+    background-color: #f2f2f2;
+
+    .feature{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-gap: 10%;
+
+        .features-box{
+            display: grid;
+            grid-template-columns: repeat(2, 48%);
+            grid-gap: 30px;
+
+            .single-feature{
+                margin-bottom: 30px;
+
+                h4{
+                    text-transform: capitalize;
+                    margin: 10px 0;
+                }
+            }
+        }
+
+        .feature-img{
+            margin-top: 200px;
+            img{
+                width: 100%;
+                height: 90%;
+            }
+        }
+    }
+}

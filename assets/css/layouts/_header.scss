@@ -1,0 +1,49 @@
+.header-area{
+    padding: 25px 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    .header{
+        display: grid;
+        grid-template-columns: 15% 80%;
+        column-gap: 5%;
+        align-items: center;
+
+        .logo{
+
+            a{
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 23px;
+                display: block;
+                color: #fff;
+            }
+        }
+
+        .menu{
+
+            ul{
+                display: flex;
+                justify-content: flex-end;
+
+                li{
+                    a{
+                        margin-left: 20px;
+                        text-transform: capitalize;
+                        font-size: 18px;
+                        transition: .3s;
+                        color: #fff;
+
+                        &:hover{
+                            color: #ff7720;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
