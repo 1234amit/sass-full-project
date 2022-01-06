@@ -753,4 +753,117 @@ p {
   display: block;
   margin: 25px 0;
 }
+
+.team {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.team .single-team {
+  position: relative;
+  z-index: 2;
+  background-size: cover;
+  background-position: top;
+  height: 350px;
+  overflow: hidden;
+}
+
+.team .single-team:hover .team-content {
+  bottom: 0;
+}
+
+.team .single-team .team-content {
+  position: absolute;
+  left: 0;
+  bottom: -130px;
+  text-align: center;
+  width: 100%;
+  background-color: #333;
+  padding: 20px 0;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.team .single-team .team-content h4 {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.team .single-team .team-content h4 span {
+  display: block;
+  font-size: 16px;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+}
+
+.team .single-team .team-content a {
+  margin: 0 7px;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.team .single-team .team-content a:hover {
+  color: #ff7720;
+}
+
+.price {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.price .single-price {
+  text-align: center;
+  padding: 40px 20px;
+  border: 1px solid #ddd;
+}
+
+.price .single-price.active h3 {
+  background-color: #ff7720;
+  color: #fff;
+}
+
+.price .single-price h5 {
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.price .single-price h3 {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+  margin: 20px 0;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.price .single-price h3 span {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.price .single-price ul li {
+  border-bottom: #f2f2f2;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.price .single-price ul li:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.price .single-price a {
+  margin-top: 20px;
+}
 /*# sourceMappingURL=style.css.map */
