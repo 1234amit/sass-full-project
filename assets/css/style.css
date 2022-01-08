@@ -993,4 +993,55 @@ p {
 .blog-area .blog .single-blog .blog-img a:hover {
   color: #ff2277;
 }
+
+.subscribe-area {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.subscribe-area::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: .80;
+  z-index: -1;
+  left: 0;
+  top: 0;
+}
+
+.subscribe-area .subscribe {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.subscribe-area .subscribe form {
+  position: relative;
+}
+
+.subscribe-area .subscribe input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+}
+
+.subscribe-area .subscribe input[type="submit"] {
+  width: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ff7720;
+  border: 0;
+  padding: 7px 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
