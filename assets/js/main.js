@@ -11,6 +11,9 @@ $(document).ready(function(){
     });
 
     $('.counter-increment').counterUp();
+
+    // mobile menu activate
+    $('#nav').slicknav();
 })
 
 // for create the sticky navbar
