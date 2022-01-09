@@ -1044,4 +1044,106 @@ p {
   color: #fff;
   cursor: pointer;
 }
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.contact .contact-address {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.contact .contact-address .single-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contact-address .single-contact i {
+  background-color: #ff7720;
+  color: #fff;
+  padding: 15px;
+  font-size: 30px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.contact .contact-address .single-contact h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.contact .contact-address .single-contact h4 span {
+  display: block;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 15px;
+}
+
+.contact .contact-form input, .contact .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.contact .contact-form input[type="submit"] {
+  background-color: #ff7720;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact .contact-form input[type="submit"]:hover {
+  background-color: tomato;
+}
+
+.partner-area {
+  background-color: #f2f2f2;
+  padding: 60px 0;
+}
+
+.partner-area .partner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[6];
+      grid-template-columns: repeat(6, auto);
+}
+
+.partner-area .partner img {
+  max-width: 120px;
+}
+
+.footer-area {
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-area a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.footer-area p {
+  margin-top: 10px;
+}
 /*# sourceMappingURL=style.css.map */

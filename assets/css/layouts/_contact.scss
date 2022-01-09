@@ -1,0 +1,62 @@
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 30px;
+
+    .contact-address{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        column-gap: 15px;
+
+        .single-contact{
+            display: flex;
+            align-items: center;
+
+            i{
+                background-color: #ff7720;
+                color: #fff;
+                padding: 15px;
+                font-size: 30px;
+                text-align: center;
+                margin-right: 20px;
+            }
+
+            h4{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 20px;
+
+                span{
+                    display: block;
+                    font-weight: 400;
+                    text-transform: lowercase;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .contact-form{
+        input, textarea{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"]{
+            background-color: #ff7720;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 18px;
+            border: 0;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover{
+                background-color: tomato;
+            }
+        }
+    }
+}
