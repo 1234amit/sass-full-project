@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCSS Project</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <!-- magnefic popup css link -->
+    <link rel="stylesheet" href="assets/css/plagins/magnefic-popup/magnefic-popup.css">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+
+
     <header class="header-area">
         <div class="container">
             <div class="header">
@@ -17,15 +21,15 @@
                     <a href="#">SASS Project</a>
                 </div>
                 <div class="menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">team</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul id="nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#team">team</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -33,7 +37,7 @@
     </header>
 
     <!-- banner section start here -->
-    <section class="banner-area" style="background-image:url('assets/img/bannar.jpg')">
+    <section class="banner-area" style="background-image:url('assets/img/bannar.jpg')" id="home">
         <div class="container">
             <div class="banner-content">
                 <h4>Welcome To Our Agency</h4>
@@ -48,7 +52,7 @@
     </section>
     <!-- banner section end here -->
     <!-- about section start here -->
-    <section class="about-area pt-100 pb-100">
+    <section class="about-area pt-100 pb-100" id="about">
         <div class="container">
             <div class="section-title text-center mb-70">
                 <h4>What to do</h4>
@@ -140,7 +144,7 @@
     <!-- feature code end here -->
 
     <!-- service area start here -->
-    <div class="services-area pt-100 pb-100">
+    <div class="services-area pt-100 pb-100" id="services">
         <div class="container">
             <div class="section-title text-center mb-70">
                 <h4>What to do</h4>
@@ -222,7 +226,7 @@
     <!-- process area end -->
 
     <!-- project area start here -->
-    <section class="project-area pt-100 pb-100">
+    <section class="project-area pt-100 pb-100" id="projects">
         <div class="container">
             <div class="section-title text-center mb-70">
                 <h4>What to do</h4>
@@ -232,42 +236,42 @@
             <div class="projects">
                 <div class="single-project" style="background-image: url('assets/img/p1.jpg');">
                     <div class="project-content">
-                        <a href="#"><i class="fas fa-angle-double-down"></i></a>
+                        <a href="assets/img/p1.jpg" class="project-popup"><i class="fas fa-angle-double-down"></i></a>
                         <h4>Project name <span>Category</span></h4>
                     </div>
                 </div>
 
                 <div class="single-project" style="background-image: url('assets/img/p2.jpg');">
                     <div class="project-content">
-                        <a href="#"><i class="fas fa-angle-double-left"></i></a>
+                        <a href="assets/img/p2.jpg" class="project-popup"><i class="fas fa-angle-double-left"></i></a>
                         <h4>Project name <span>Category</span></h4>
                     </div>
                 </div>
 
                 <div class="single-project" style="background-image: url('assets/img/p3.jpg');">
                     <div class="project-content">
-                        <a href="#"><i class="fas fa-angle-double-right"></i></a>
+                        <a href="assets/img/p3.jpg" class="project-popup"><i class="fas fa-angle-double-right"></i></a>
                         <h4>Project name <span>Category</span></h4>
                     </div>
                 </div>
 
                 <div class="single-project" style="background-image: url('assets/img/p4.jpg');">
                     <div class="project-content">
-                        <a href="#"><i class="fas fa-angle-double-up"></i></a>
+                        <a href="assets/img/p4.jpg" class="project-popup"><i class="fas fa-angle-double-up"></i></a>
                         <h4>Project name <span>Category</span></h4>
                     </div>
                 </div>
 
                 <div class="single-project" style="background-image: url('assets/img/p5.jpg');">
                     <div class="project-content">
-                        <a href="#"><i class="fas fa-angle-down"></i></a>
+                        <a href="assets/img/p5.jpg" class="project-popup"><i class="fas fa-angle-down"></i></a>
                         <h4>Project name <span>Category</span></h4>
                     </div>
                 </div>
 
                 <div class="single-project" style="background-image: url('assets/img/p6.jpg');">
                     <div class="project-content">
-                        <a href="#"><i class="fas fa-angle-left"></i></a>
+                        <a href="assets/img/p6.jpg" class="project-popup"><i class="fas fa-angle-left"></i></a>
                         <h4>Project name <span>Category</span></h4>
                     </div>
                 </div>
@@ -282,22 +286,22 @@
             <div class="counter">
                 <div class="single-counter">
                     <i class="fas fa-suitcase"></i>
-                    <h4><span>543</span>Projects</h4>
+                    <h4><span class="counter-increment">543</span>Projects</h4>
                 </div>
 
                 <div class="single-counter">
                     <i class="fas fa-award"></i>
-                    <h4><span>32</span>Awards</h4>
+                    <h4><span class="counter-increment">32</span>Awards</h4>
                 </div>
 
                 <div class="single-counter">
                     <i class="fas fa-user"></i>
-                    <h4><span>45</span>Users</h4>
+                    <h4><span class="counter-increment">45</span>Users</h4>
                 </div>
 
                 <div class="single-counter">
                     <i class="fas fa-mug-hot"></i>
-                    <h4><span>2345</span>Cup of Coffee</h4>
+                    <h4><span class="counter-increment">2345</span>Cup of Coffee</h4>
                 </div>
             </div>
         </div>
@@ -305,7 +309,7 @@
     <!-- counter area end here -->
 
     <!-- creative team member  -->
-    <section class="team-area pt-100 pb-100">
+    <section class="team-area pt-100 pb-100" id="team">
         <div class="container">
             <div class="section-title text-center mb-70">
                 <h4>What to do</h4>
@@ -401,7 +405,7 @@
     <!--price area end here  -->
 
     <!-- testimonial area -->
-    <section class="testimonials-area pt-100 pb-100" style="background-image: url('assets/img/1234.jpg');">
+    <section class="testimonials-area pt-100 pb-100" style="background-image: url('assets/img/1234.jpg');" id="testimonials">
         <div class="container">
             <div class="section-title text-center mb-70">
                 <h4>What to do</h4>
@@ -441,7 +445,7 @@
     <!-- testimonial area end -->
 
     <!-- blog area -->
-    <section class="blog-area pt-100 pb-100">
+    <section class="blog-area pt-100 pb-100" id="blog">
         <div class="container">
             <div class="section-title text-center mb-70">
                 <h4>What to do</h4>
@@ -512,7 +516,7 @@
     <!-- subscribe section end here -->
 
     <!-- contact section start here -->
-    <section class="contact-area pt-100 pb-100">
+    <section class="contact-area pt-100 pb-100" id="contact">
         <div class="container">
             <div class="section-title text-center mb-70">
                 <h4>What to do</h4>
@@ -583,4 +587,11 @@
         </div>
     </footer>
     <!-- footer area end here -->
+    <script src="assets/js/jquey1.12.min.js"></script>
+    <script src="assets/js/onepage-nav.js"></script>
+    <script src="assets/js/magnefic-popup.min.js"></script>
+    <script src="assets/js/waypoint.min.js"></script>
+    <script src="assets/js/counterup.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    </body>
 </html>

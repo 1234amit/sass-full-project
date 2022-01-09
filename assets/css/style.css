@@ -333,6 +333,13 @@ p {
   right: 0;
   left: 0;
   z-index: 99;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header-area.sticky {
+  background-color: #333;
+  padding: 20px 0;
 }
 
 .header-area .header {
@@ -362,6 +369,10 @@ p {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.header-area .header .menu ul li.current a {
+  color: #ff7720;
 }
 
 .header-area .header .menu ul li a {
